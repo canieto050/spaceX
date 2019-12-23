@@ -1,0 +1,35 @@
+<!-- Sidebar -->
+<ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion" id="accordionSidebar">
+
+    <!-- Sidebar - Brand -->
+    <a class="sidebar-brand d-flex align-items-center justify-content-center" href="index.html">
+        <div class="sidebar-brand-icon rotate-n-15">
+            <i class="fas fa-rocket"></i>
+        </div>
+        <div class="sidebar-brand-text mx-3">SpaceX Launches</div>
+    </a>
+
+    <!-- Divider -->
+    <hr class="sidebar-divider my-0">
+
+
+    <!-- Divider -->
+    <hr class="sidebar-divider">
+
+    <!-- Heading -->
+    <div class="sidebar-heading">
+        Interface
+
+
+        <!-- Nav Item - Pages Collapse Menu -->
+        <div class="form-group ">
+            <label class="text-white">Cohetes disponibles</label>
+            <select class="form-control" (change)="changeRocket($event)">
+            <option value="0">Selecciona una opción</option>
+            <option *ngFor="let rocket of rockets">{{rocket.name}}</option>
+        </select>
+        </div>
+    </div>
+
+</ul>
+<!-- End of Sidebar -->
